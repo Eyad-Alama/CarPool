@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  from: MyString
+  to: MyString
+  trip_date: 2014-06-20
+  user_id: 1
+  seats_max: 1
+  seats_left: 1
+
+two:
+  from: MyString
+  to: MyString
+  trip_date: 2014-06-20
+  user_id: 1
+  seats_max: 1
+  seats_left: 1

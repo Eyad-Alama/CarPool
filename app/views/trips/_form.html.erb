@@ -1,0 +1,41 @@
+<%= form_for(@trip) do |f| %>
+  <% if @trip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trip.errors.count, "error") %> prohibited this trip from being saved:</h2>
+
+      <ul>
+      <% @trip.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :from %><br />
+    <%= f.text_field :from %>
+  </div>
+  <div class="field">
+    <%= f.label :to %><br />
+    <%= f.text_field :to %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_date %><br />
+    <%= f.date_select :trip_date %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :seats_max %><br />
+    <%= f.number_field :seats_max %>
+  </div>
+  <div class="field">
+    <%= f.label :seats_left %><br />
+    <%= f.number_field :seats_left %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
