@@ -4,6 +4,7 @@ FactoryGirl.define do
     user_name "Eyad Alama"
     email "eyad@mail.com"
     phone_number "0192944889"
+    id 1
   end
 
 #:from, :seats_left, :seats_max, :to, :trip_date, :user_id
